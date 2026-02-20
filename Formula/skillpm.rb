@@ -5,21 +5,21 @@
 class Skillpm < Formula
   desc "Local-first skill package manager for AI agents"
   homepage "https://github.com/eddieran/skillpm"
-  version "0.3.0"
+  version "0.4.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/eddieran/skillpm/releases/download/v0.3.0/skillpm_Darwin_x86_64.tar.gz"
-      sha256 "bb11164dcdb5288c092d5cdd7050bb5febca2eecec3511a978b38fd0b054c3a5"
+      url "https://github.com/eddieran/skillpm/releases/download/v0.4.0/skillpm_Darwin_x86_64.tar.gz"
+      sha256 "5a4ad0b378363153866f92553a437d5a9870b159c64588694fb4ee49c1bbb251"
 
       def install
         bin.install "skillpm"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/eddieran/skillpm/releases/download/v0.3.0/skillpm_Darwin_arm64.tar.gz"
-      sha256 "f17c2da49b0663434222c01cc301f4d626230eb7d35df32bf0c7c4dcc0e60a56"
+      url "https://github.com/eddieran/skillpm/releases/download/v0.4.0/skillpm_Darwin_arm64.tar.gz"
+      sha256 "5d6d30a2c6aab3d61a9f9996aa1a3e4d5d3104ac0f30b8f216cf3d03cf629414"
 
       def install
         bin.install "skillpm"
@@ -29,15 +29,15 @@ class Skillpm < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/eddieran/skillpm/releases/download/v0.3.0/skillpm_Linux_x86_64.tar.gz"
-      sha256 "ab5e1f333755f3f61ae80be7ed0803e9b6ecabb1f09ee70e98444884420dac33"
+      url "https://github.com/eddieran/skillpm/releases/download/v0.4.0/skillpm_Linux_x86_64.tar.gz"
+      sha256 "3d8b005393b3199392421cd88fbc82a4ad606549e4d8ae3cb38035f7d6d98d1e"
       def install
         bin.install "skillpm"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/eddieran/skillpm/releases/download/v0.3.0/skillpm_Linux_arm64.tar.gz"
-      sha256 "d9f3655a8c3219301f98e3471e85ae62a88429835f1df3daff647f231f04b7fb"
+      url "https://github.com/eddieran/skillpm/releases/download/v0.4.0/skillpm_Linux_arm64.tar.gz"
+      sha256 "0d945bf0b141001de50552ed675d09cc17216830e7dd4dce01b5a29c290081ab"
       def install
         bin.install "skillpm"
       end
