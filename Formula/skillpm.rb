@@ -5,21 +5,21 @@
 class Skillpm < Formula
   desc "Local-first skill package manager for AI agents"
   homepage "https://github.com/eddieran/skillpm"
-  version "0.5.4"
+  version "0.5.5"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/eddieran/skillpm/releases/download/v0.5.4/skillpm_Darwin_x86_64.tar.gz"
-      sha256 "a3305a1963160b153f7add9436e0d6c15164be1ecfc3357bfe2631a2196aa6a8"
+      url "https://github.com/eddieran/skillpm/releases/download/v0.5.5/skillpm_Darwin_x86_64.tar.gz"
+      sha256 "edb89263918efa5a5381910010db3a7e3fb8ed8851cf1cccf285b6f6a5fcbaa3"
 
       define_method(:install) do
         bin.install "skillpm"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/eddieran/skillpm/releases/download/v0.5.4/skillpm_Darwin_arm64.tar.gz"
-      sha256 "45e5aeb93cfc3665db32baffb6daa0f794fd438a091849fed8848daf439fc7ce"
+      url "https://github.com/eddieran/skillpm/releases/download/v0.5.5/skillpm_Darwin_arm64.tar.gz"
+      sha256 "9551311f3e47b4b376915f926368ded6be4c3880cc800a6e48c2fafdf5033aab"
 
       define_method(:install) do
         bin.install "skillpm"
@@ -29,15 +29,15 @@ class Skillpm < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/eddieran/skillpm/releases/download/v0.5.4/skillpm_Linux_x86_64.tar.gz"
-      sha256 "14aa06f231875353d65a05da7d0650cc92ec9f1aa69eb82203ae23628d8c9705"
+      url "https://github.com/eddieran/skillpm/releases/download/v0.5.5/skillpm_Linux_x86_64.tar.gz"
+      sha256 "134406e9fe060da3e12a96c02dd5a66d4400b2411eb618c276f5b14c97b7aed4"
       define_method(:install) do
         bin.install "skillpm"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/eddieran/skillpm/releases/download/v0.5.4/skillpm_Linux_arm64.tar.gz"
-      sha256 "308069c207471c5172e3531f8b36e8459b22d1173c160208c581fb9f61356d95"
+      url "https://github.com/eddieran/skillpm/releases/download/v0.5.5/skillpm_Linux_arm64.tar.gz"
+      sha256 "e11d5a5acfc06064e39f86e8a880823f617a7da2acec581814adcc4239f50e13"
       define_method(:install) do
         bin.install "skillpm"
       end
