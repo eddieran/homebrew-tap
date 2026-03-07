@@ -11,7 +11,7 @@ class Skillpm < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/eddieran/skillpm/releases/download/v3.0.0/skillpm_Darwin_x86_64.tar.gz"
-      sha256 "d86f7ed6e50696c89ffaa62b15d2629f86d7b1d9ea759248628db7342b9acbcd"
+      sha256 "66a0185fc193859bcaa9ba801ef488313fcaca753f2c01e72d0545992957257a"
 
       define_method(:install) do
         bin.install "skillpm"
@@ -19,7 +19,7 @@ class Skillpm < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/eddieran/skillpm/releases/download/v3.0.0/skillpm_Darwin_arm64.tar.gz"
-      sha256 "0f7fe1cdeff1bfe60a205a90dde94145f97a35290ad13451e06a033eeaf1e7d2"
+      sha256 "874afcf93e6aa80f14cd0aba018a98a66d3001c4e6d744e08c54fd2017d51a9d"
 
       define_method(:install) do
         bin.install "skillpm"
@@ -30,14 +30,14 @@ class Skillpm < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/eddieran/skillpm/releases/download/v3.0.0/skillpm_Linux_x86_64.tar.gz"
-      sha256 "7f9e36a3a5e8840e778d2efe06aad40b08ebe42a9c1e4da4d397203938f763bb"
+      sha256 "962154a1e08b4ebb5d319e9c8fc24cad8fb6d89c55cfb1d49b932fd6446844bd"
       define_method(:install) do
         bin.install "skillpm"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/eddieran/skillpm/releases/download/v3.0.0/skillpm_Linux_arm64.tar.gz"
-      sha256 "210594908e0471dba2ca651b8cf72f175d1293ce09b5f921f0f4fd34d039125b"
+      sha256 "cf7a5d52347f8eb55e3103c076ecbdea55da77e6c143a8d5f5b8970a78e7b557"
       define_method(:install) do
         bin.install "skillpm"
       end
