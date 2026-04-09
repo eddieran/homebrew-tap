@@ -1,26 +1,26 @@
 class ClaudeInsight < Formula
   desc "Local observability and audit tooling for Claude Code sessions"
   homepage "https://github.com/eddieran/claude-insight"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/eddieran/claude-insight/releases/download/v0.1.2/claude-insight-v0.1.2-darwin-aarch64.tar.gz"
-      sha256 "486e10fdf3d2b791cda930ce2b2ecd51fa3f6760ce9ea7619c751131a6735588"
+      url "https://github.com/eddieran/claude-insight/releases/download/v0.1.3/claude-insight-v0.1.3-darwin-aarch64.tar.gz"
+      sha256 "70d93d1816386af54c5160e6a59f7f718bfa36b1781d9b1959768030d54d2689"
     else
-      url "https://github.com/eddieran/claude-insight/releases/download/v0.1.2/claude-insight-v0.1.2-darwin-x86_64.tar.gz"
-      sha256 "192cd7a3779e7418c8b72d815e8dc5a0c5bdccdf9cedcb74855955f8d47ceff7"
+      url "https://github.com/eddieran/claude-insight/releases/download/v0.1.3/claude-insight-v0.1.3-darwin-x86_64.tar.gz"
+      sha256 "3bdb60cc3c4e7a8a3f163fa8d48554843abd167f9577cd8fb722b0990cdfaf0a"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/eddieran/claude-insight/releases/download/v0.1.2/claude-insight-v0.1.2-linux-aarch64.tar.gz"
-      sha256 "d2a0f23ea8d168f3211d6358bf24e3f8bd5358272bc011ba6878a5e3a2d2ff6b"
+      url "https://github.com/eddieran/claude-insight/releases/download/v0.1.3/claude-insight-v0.1.3-linux-aarch64.tar.gz"
+      sha256 "a0e0622f23638c89631228f029617ed9e7123fd03edad59ec2b3c9434fd46061"
     else
-      url "https://github.com/eddieran/claude-insight/releases/download/v0.1.2/claude-insight-v0.1.2-linux-x86_64.tar.gz"
-      sha256 "75f45db417e669bd2539aa78116e8e20165cd40a98cc037ffd4bf4edc5b5368b"
+      url "https://github.com/eddieran/claude-insight/releases/download/v0.1.3/claude-insight-v0.1.3-linux-x86_64.tar.gz"
+      sha256 "e1117ed08981d01a8e8f4575d7cb8425bd6dd92b7a0e1f249fd06229c58d797a"
     end
   end
 
